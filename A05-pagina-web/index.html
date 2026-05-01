@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biomas Brasileiros</title>
     <link rel="stylesheet" href="style.css">
+
+    <script> 
+        window.alert("Olá! Explore a diversidade e a riqueza natural do nosso país!");
+
+        // função que guarda a inserção de dados do usuário e exibe um alerta com a informação inserida
+        function mostrarInsercao(){
+            let entrada = window.prompt('Mais informações sobre o bioma:');
+            alert('Você solicitou mais informações sobre: ' + entrada);
+        }        
+    </script>
+
 </head>
 
 <body>
@@ -17,6 +28,10 @@
     onde a vegetação predominante e a fauna local foram moldadas ao longo de milênios pelo clima e pelo solo. 
     Essa unidade biológica não reconhece fronteiras políticas, sendo definida pela harmonia entre as formas de vida e o ambiente físico, 
     o que confere a cada região uma identidade ecológica única e processos evolutivos próprios.</p>
+
+    <!-- ao clicar no botão a função é chamada -->
+    <button onclick="mostrarInsercao()">Ver mais</button>
+    
 
     <img src="https://educa.ibge.gov.br/images/mapa_biomas-brasil.jpg" alt="biomas no território">
 

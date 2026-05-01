@@ -20,7 +20,8 @@ header {
     margin: 0%;
 }
 
-p {
+/* mesma estilização para dois elementos */
+p, button {
     margin-top: 50px;
     font-size: 18px;
     margin: 30px;
