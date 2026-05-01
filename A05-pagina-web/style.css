@@ -1,0 +1,35 @@
+/* para todos os elementos da página */
+* { 
+    margin: 0;
+    padding: 0; /* remove o espaço interno dos elementos */
+    box-sizing: border-box; /* força o tamanho total */
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: ivory;
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(43, 55, 19);
+    background-color: rgb(249, 249, 205);
+    width: 100%; 
+    padding: 20px 0; /* 20px é o espaço entre o texto e as extremidades horizontais */
+    margin: 0%;
+}
+
+p {
+    margin-top: 50px;
+    font-size: 18px;
+    margin: 30px;
+    line-height: 1.5; /* espaçamento entre linhas */
+}
+
+img {
+    display: block; /* elemento como um bloco que ocupa uma linha */
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
