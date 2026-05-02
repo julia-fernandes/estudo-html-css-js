@@ -6,17 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biomas Brasileiros</title>
     <link rel="stylesheet" href="style.css">
-
-    <script> 
-        window.alert("Olá! Explore a diversidade e a riqueza natural do nosso país!");
-
-        // função que guarda a inserção de dados do usuário e exibe um alerta com a informação inserida
-        function mostrarInsercao(){
-            let entrada = window.prompt('Mais informações sobre o bioma:');
-            alert('Você solicitou mais informações sobre: ' + entrada);
-        }        
-    </script>
-
 </head>
 
 <body>
@@ -33,7 +22,14 @@
     <button onclick="mostrarInsercao()">Ver mais</button>
     
 
-    <img src="https://educa.ibge.gov.br/images/mapa_biomas-brasil.jpg" alt="biomas no território">
+    <img id="img" src="https://educa.ibge.gov.br/images/mapa_biomas-brasil.jpg" alt="biomas no território">
+
+    <p>Redimensionar imagem: </p>
+
+    <button id="btn-pequena" onclick="redimensionarImagemPequena()" > Pequena </button>
+    <button id="btn-media" onclick="redimensionarImagemMedia()" > Média </button>
+    <button id="btn-grande" onclick="redimensionarImagemGrande()" > Grande </button>
+    <button id="btn-original" onclick="redimensionarImagemOriginal()" > Original </button>
 
     <p>A preservação desses conjuntos de vida é vital, pois eles funcionam como gigantescas engrenagens reguladoras. 
     Enquanto a Amazônia influencia o regime de chuvas de todo o continente, o Cerrado atua como o "berço das águas" do país. 
@@ -45,5 +41,10 @@
         <a href="https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/18307-biomas-brasileiros.html">IBGE</a>
     </p>
     
+
 </body>
+
+<!-- arquivo externo que será carregado após a leitura do HTML -->
+<script src="script.js"></script>
+
 </html>
